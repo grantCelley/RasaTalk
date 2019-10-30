@@ -1,0 +1,38 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - check_appointment
+  - message_doctor
+  - name:
+    - use_entities:
+      - name
+
+actions:
+- utter_greet
+- utter_goodbye
+- utter_iamabot
+- utter_name
+- action_next_Appointment
+
+templates:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_name:
+    - text : "What is your name?"
+
+slots:
+  name:
+    type: text
