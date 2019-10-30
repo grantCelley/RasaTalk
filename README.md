@@ -11,5 +11,5 @@ rasa train
 rasa run action
 rasa shell
 ```
-This uses python virtual enviroment.
-The rasa action server needs to run while rasa shell is running
+This uses python virtual environment.
+The Rras action server needs to run while Rasa shell is running
